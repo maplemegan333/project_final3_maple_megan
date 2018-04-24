@@ -24,7 +24,7 @@ body {
 
 header {
     text-align: center;
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid #ffffff;
     padding:10px;
 }
 
@@ -35,75 +35,54 @@ header img {
   display: block;
 }
 
-header nav ul li {
-    margin:0 .5em .5em 0;
+header nav ul,
+footer nav ul {
+    margin: 1em 0;
+    padding:0;
+}
+
+header nav ul li,
+footer nav ul li {
+    margin:0 .5em 0 0;
     padding:0 .5em 0 0;
     display: inline-block;
     border-right:1px solid #ffffff;
 }
 
-header nav ul li:last-child {
-    margin:0 0 .5em 0;
+header nav ul li:last-child,
+footer nav ul li:last-child {
+    margin: 0;
     padding:0;
     border-right:none;
 }
 
-h1 {
-    display: inline-block;
-    font-size: 3rem;
-    color: #87b60c;
-    padding: 1%;
-    font-family: 'Teko', sans-serif;
+footer {
     text-align: center;
+    padding:1px;
+    border-top:1px solid #FFF;
 }
 
-section {
-    margin-top: 20px;
+h1 {
+    font-size: 3rem;
+    color: #87b60c;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    line-height: 1em;
 }
 
 h2 {
     text-align: center;
-    max-width: 80%;
-    margin: auto;
-    padding: 2%;
-    font-size: 2rem;
-    margin: auto;
-}
-
-article {
-    width: 80%;
-    padding: 3%;
-    margin: auto;
-}
-
-#bgimg {
-    background-image: url(../img/afoot.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.color {
-    background-color: rgba(135, 182, 12, 0.5);
-    background-size: cover;
-    padding: 15px;
-}
-
-.color p {
-  text-align: justify;
+    font-size: 1.5rem;
+    margin: 1em 0 .25em;
+    color: #87b60c;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
-    padding-bottom: 10px;
+    margin: 1em 0 0;
     display: inline-block;
-    width: 90%;
+    color:#114b5f;
 }
 
 h4 {
@@ -114,14 +93,22 @@ h4 {
     width: 90%;
 }
 
+p {
+    margin: 0 0 1em 0;
+}
+
 a {
     text-decoration: none;
     color: #bada55;
     font-weight: bolder;
 }
 
-.dark {
-    color: #2c2a29;
+ul {
+    list-style-type: none;
+}
+
+section {
+  margin: 10px auto;
 }
 
 aside {
@@ -130,7 +117,27 @@ aside {
     margin: auto;
 }
 
-button {
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+aside ul li {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.wrapper{
+  width:80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.buttonWrapper{
+  text-align: center;
+}
+
+button, .button {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 1.5rem;
@@ -141,6 +148,32 @@ button {
     -webkit-border-radius: 4px 4px 4px 4px;
     border: 0 solid #000000;
     margin: 10px;
+    font-weight: 300;
+}
+
+#bgimg {
+    background-image: url(../img/afoot.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.color {
+    background-color: rgba(135, 182, 12, 0.5);
+    background-size: cover;
+    padding:15px;
+}
+
+.color p{
+  text-align: justify;
+}
+
+.color h2{
+  color:#ffffff;
+}
+
+.dark {
+    color: #2c2a29;
 }
 
 .green {
@@ -149,6 +182,15 @@ button {
 
 .blue {
     background-color: #114b5f;
+}
+
+.logos{
+  text-align: center;
+}
+
+.logos img {
+  width:80%;
+  margin-bottom: 1em;
 }
 
 .hvr-grow-shadow {
@@ -169,10 +211,6 @@ button {
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-ul {
-    list-style-type: none;
 }
 
 .box {
@@ -262,15 +300,6 @@ ul {
     background-size: cover;
 }
 
-footer {
-    text-align: center;
-}
-
-aside ul li {
-    display: inline-block;
-    margin: 0.5em;
-}
-
 .m {
     font-size: 2.2em;
     font-weight: 700;
@@ -342,18 +371,7 @@ aside ul li {
     margin: auto;
 }
 
-footer {
-    text-align: center;
-    padding:1px;
-    border-top:1px solid #FFF;
-}
-
-footer nav ul {
-    margin: 1em 0 0 0;
-    padding:0;
-}
-
-footer nav ul li {
-    margin:0 0 .5em 0;
-    padding:0;
+.socialIcons{
+  text-align:center;
+  margin: 1em auto;
 }
